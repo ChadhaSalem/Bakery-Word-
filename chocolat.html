@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bakery Chocolat</title>
+
+    <link rel="stylesheet" href="Css/styleAccueil.css" />
+    <link rel="stylesheet" href="Css/styleCategorieArticle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+    <div id="compte" class="div-compte">
+      <span class="first-span">Besoin d'aide ? </span>
+      <span class="second-span"> Appeler 72313478</span>
+      <a class="inscription" href="inscription.html"
+        ><span>Inscription</span></a
+      >
+      <a class="connexion" href="connexion.html"><span>Connexion</span></a>
+    </div>
+    <nav>
+      <div class="logo">
+        <p>Bakery World</p>
+      </div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li>
+          <a href="" class="service">SERVICES</a>
+          <ul>
+            <li><a href="">Amandes</a></li>
+            <li><a href="">Macarons</a></li>
+            <li><a href="">Traditions</a></li>
+            <li><a href="">Chocolat</a></li>
+          </ul>
+        </li>
+        <li><a href="propos.html">ABOUT</a></li>
+        <li>
+          <a href=""><i class="fas fa-heart"></i></a>
+        </li>
+        <li>
+          <a href="panier.html"><i class="fas fa-shopping-cart"></i> </a>
+        </li>
+      </ul>
+    </nav>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- partie a gauche de filtre jusqua prix -->
+    <div id="container">
+      <div class="tout">
+        <div>
+          <aside class="filtre">
+            <!-- la partie droite-->
+            <h4>Filtre</h4>
+            <br />
+            <p>6 produits</p>
+            <br />
+            <hr />
+            <br />
+          </aside>
+        </div>
+        <div>
+          <aside class="dispo">
+            <h4>Disponibilité</h4>
+            <br />
+
+            <form class="check">
+              <input
+                type="checkbox"
+                name="produit"
+                value="En stock"
+                class="disponibilité"
+              />
+              <span>stock</span> <br />
+              <br />
+
+              <input
+                type="checkbox"
+                name="produit"
+                value="En rupture de stock"
+                class="disponibilité"
+              />
+              <span>En rupture de stock </span>
+            </form>
+            <br />
+            <hr />
+          </aside>
+        </div>
+      </div>
+
+      <!-- Image backround-->
+      <div class="first">
+        <div class="centre">
+          <!-- au centre et avec bordrer-->
+          <img src="images/chocolatBackground.jpg" class="img-general" />
+
+          <div class="pub">
+            <h1>Nos chocolats</h1>
+            <br />
+
+            <p>
+              "Venez découvrir la divine tentation chocolatée de notre
+              pâtisserie <br />artisanale,pour une expérience de plaisir sucré
+              inoubliable !"
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <!--le tri  et avec border aussi-->
+        <div class="tr">
+          <p>Triez par :</p>
+          <br />
+
+          <select name="Trie" id="trie-prix">
+            <option>Prix: faible à élevé</option>
+            <option>Prix: élevé à faible</option>
+          </select>
+          <br />
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <!--nav et modification des images-->
+        <div class="notif" id="notification"></div>
+        <div id="article-conteneur">
+          <div class="article">
+            <a href="crémecafé.html"
+              ><img src="images/bouleChoc.jpg" class="image"
+            /></a>
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN" onclick="changeIcon()">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <h4>Truffles au chocolat et à la créme de café</h4>
+              <p class="description-article">
+                Notre irrésistible association de chocolat et de café avec nos
+                truffes à la crème de café. Ces petites gourmandises chocolatées
+                sont remplies d'une crème onctueuse de café, le tout enrobé d'un
+                chocolat noir croquant
+              </p>
+              <p class="price">20.000</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="article">
+            <a href="avocado.html"
+              ><img src="images/salée.jpg" class="image"
+            /></a>
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN" onclick="changeIcon()">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <h4>Truffes salées au chocolat et à l'avocado</h4>
+              <p class="description-article">
+                Nos truffes salées au chocolat et à l'avocat ! Elles sont
+                remplies d'une crème d'avocat onctueuse et assaisonnée de sel de
+                mer, le tout enrobé d'un chocolat noir riche en saveurs. Ces
+                truffes sont parfaites pour les amateurs de chocolat et d'avocat
+              </p>
+              <p class="price">24.000</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="article">
+            <a href="framboise.html"
+              ><img src="images/strawberry.jpg" class="image"
+            /></a>
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN" onclick="changeIcon()">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <h4>Truffes au chocolat et aux fraises</h4>
+              <p class="description-article">
+                Nos truffes au chocolat et aux fraises ! Ces délicieuses
+                bouchées sont faites d'une ganache de chocolat noir veloutée et
+                fondante, mélangée à des morceaux de fraises séchées pour une
+                touche fruitée irrésistible. Elles sont ensuite enrobées d'un
+                chocolat noir croquant pour une texture et une saveur
+                parfaitement équilibrées.
+              </p>
+              <p class="price">37.500</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="article">
+            <a href="datte.html"
+              ><img src="images/noixcoco.jpg" class="image"
+            /></a>
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN" onclick="changeIcon()">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <h4>Truffes au chocolat et à la noix de coco</h4>
+              <p class="description-article">
+                Nos truffes au chocolat et à la noix de coco sont une véritable
+                explosion de saveurs exotiques en bouche ! Confectionnées avec
+                une ganache de chocolat noir onctueuse, elles sont enrobées de
+                noix de coco râpée pour une texture croquante et une saveur
+                douce et parfumée
+              </p>
+              <p class="price">28.500</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="article">
+            <a href="datte.html"
+              ><img src="images/Dates.jpg" class="image"
+            /></a>
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN" onclick="changeIcon()">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <h4>Dattes au chocolat</h4>
+              <p class="description-article">
+                Nos dattes au chocolat sont un délice pour les amateurs de
+                chocolat et de fruits secs ! Les dattes moelleuses sont farcies
+                d'une ganache de chocolat noir riche et onctueuse, créant un
+                mariage parfait de textures et de saveurs. C'est une alternative
+                saine et naturelle aux bonbons traditionnels
+              </p>
+              <p class="price">30.500</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="article">
+            <a href="crémecafé.html"
+              ><img src="images/mocha crean choc.jpg" class="image"
+            /></a>
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN" onclick="changeIcon()">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <h4>Truffes au citron</h4>
+              <p class="description-article">
+                Nos truffes au citron sont une véritable explosion de saveurs en
+                bouche ! La ganache de chocolat fondante est mélangée à une
+                crème de citron acidulée, créant un équilibre parfait entre le
+                sucré et l'acidulé. Chaque bouchée vous transporte dans un
+                voyage gustatif rafraîchissant et délicieux.
+              </p>
+              <p class="price">35.000</p>
+              <br />
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <!-- Partie footer -->
+
+    <footer>
+      <div class="div-general-info">
+        <div class="position">
+          <i class="info-icon fas fa-map-marker-alt"></i>
+          <div class="descrip-info">
+            <h3>Nos Adresses</h3>
+            <p>Centre Urbain Nord</p>
+          </div>
+        </div>
+        <div class="contact">
+          <i class="info-icon fa-solid fa-phone"></i>
+          <div class="descrip-info">
+            <h3>Contacter nous</h3>
+            <p>+216 72313478</p>
+          </div>
+        </div>
+        <div class="email">
+          <i class="info-icon fa-solid fa-envelope"></i>
+          <div class="descrip-info">
+            <h3>Email</h3>
+            <a href="mailto:Bakery-world@gmail.com">Bakery-world@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <hr class="separateur-hr" />
+      <div class="div-info">
+        <div class="info">
+          <h4>Bakery World</h4>
+          <hr />
+          <p>
+            Backery World est une pâtisserie passionnée par l'art de la
+            pâtisserie. Nous sommes fiers de créer des produits de qualité
+            supérieure, avec les meilleurs ingrédients pour garantir une
+            expérience de dégustation inoubliable. Chez Backery World, nous
+            proposons une large sélection de pâtisseries allant des classiques
+            traditionnels aux créations les plus innovantes. Nous sommes
+            déterminés à satisfaire les papilles de nos clients en offrant un
+            large choix de produits frais et savoureux
+          </p>
+        </div>
+        <div class="info liens">
+          <h4>Liens utiles</h4>
+          <hr />
+          <ul>
+            <li>
+              <a href="mentions.html">Mentions légales </a>
+            </li>
+
+            <li><a href="">A propos de nous</a></li>
+            <li><a href="">Exprimer votre Feedback</a></li>
+          </ul>
+        </div>
+
+        <div class="reseaux-soc info">
+          <h4>Suivez nous</h4>
+          <hr />
+          <a href="#"><i class="fa-brands fa-facebook sm faceb"></i></a>
+          <a href="#"><i class="fab fa-instagram sm insta"></i></a>
+          <a href="#"><i class="fab fa-twitter sm twi"></i></a>
+          <a href="#"><i class="fab fa-pinterest sm pin"></i></a>
+        </div>
+      </div>
+
+      <div class="copyrights">
+        <p>Copyright © 2023 Backery World</p>
+      </div>
+    </footer>
+
+    <script src="trierArticle.js"></script>
+    <script src="heart.js"></script>
+    <script src="aperçu.js"></script>
+  </body>
+</html>

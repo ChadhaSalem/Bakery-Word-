@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bakery Cupcake</title>
+
+    <link rel="stylesheet" href="Css/styleAccueil.css" />
+    <link rel="stylesheet" href="Css/styleCategorieArticle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+    <!-- partie nav sup -->
+    <div id="compte" class="div-compte">
+      <span class="first-span">Besoin d'aide ? </span>
+      <span class="second-span"> Appeler 72313478</span>
+      <a class="inscription" href="inscription.html"
+        ><span>Inscription</span></a
+      >
+      <a class="connexion" href="connexion.html"><span>Connexion</span></a>
+    </div>
+    <nav>
+      <div class="logo">
+        <p>Bakery World</p>
+      </div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li>
+          <a href="" class="service">SERVICES</a>
+          <ul>
+            <li><a href="">Amandes</a></li>
+            <li><a href="">Macarons</a></li>
+            <li><a href="">Traditions</a></li>
+            <li><a href="">Chocolat</a></li>
+          </ul>
+        </li>
+        <li><a href="propos.html">ABOUT</a></li>
+        <li>
+          <a href=""><i class="fas fa-heart"></i></a>
+        </li>
+        <li>
+          <a href="panier.html"><i class="fas fa-shopping-cart"></i> </a>
+        </li>
+      </ul>
+    </nav>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- partie a gauche de filtre jusqua prix -->
+    <div id="container">
+      <div class="tout">
+        <div>
+          <aside class="filtre">
+            <!-- la partie droite-->
+            <h4>Filtre</h4>
+            <br />
+            <p>8 produits</p>
+            <br />
+            <hr />
+            <br />
+          </aside>
+        </div>
+        <div>
+          <aside class="dispo">
+            <h4>Disponibilité</h4>
+            <br />
+
+            <form class="check">
+              <input
+                type="checkbox"
+                name="produit"
+                value="En stock"
+                class="disponibilité"
+              />
+              <span>stock</span> <br />
+              <br />
+
+              <input
+                type="checkbox"
+                name="produit"
+                value="En rupture de stock"
+                class="disponibilité"
+              />
+              <span>En rupture de stock </span>
+            </form>
+            <br />
+            <hr />
+          </aside>
+        </div>
+      </div>
+
+      <!-- Image backround-->
+      <div class="first">
+        <div class="centre">
+          <!-- au centre et avec bordrer-->
+          <img src="images/bgCupcake2.jpg" class="img-general" />
+
+          <div class="pub">
+            <h1>Nos Cupcakes</h1>
+            <br />
+
+            <p>
+              Venez fêter vos événements avec nos cupcakes colorés et
+              ludiques,<br />
+              pour des souvenirs inoubliables !
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <!--le tri  et avec border aussi-->
+        <div class="tr">
+          <p>Triez par :</p>
+          <br />
+
+          <select name="Trie" id="trie-prix">
+            <option>Prix: faible à élevé</option>
+            <option>Prix: élevé à faible</option>
+          </select>
+          <br />
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <!--nav et modification des images-->
+        <div class="notif" id="notification"></div>
+        <div id="article-conteneur">
+          <div class="article">
+            <a href="caramel.html">
+              <img src="images/cremeCup.jpg" class="image"
+            /></a>
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN" onclick="changeIcon()">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <h4>Cupcake à la crème</h4>
+              <p class="description-article">
+                notre sélection de cupcakes à la crème, des petites gourmandises
+                qui feront fondre vos papilles ! Confectionnés à partir d'un
+                moelleux gâteau vanillé, nos cupcakes sont garnis d'une crème
+                onctueuse et légère
+              </p>
+              <p class="price">5.900</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="article">
+            <a href="chocolat.html"
+              ><img src="images/chocolat.jpg" class="image"
+            /></a>
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN" onclick="changeIcon()">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <h4>Cupcake au chocolat</h4>
+              <p class="description-article">
+                Nos cupcakes au chocolat sont faits avec un gâteau moelleux et
+                fondant en bouche, nos cupcakes sont garnis d'une crème
+                onctueuse au chocolat noir riche et intense. Nous utilisons
+                uniquement des ingrédients de qualité pour offrir une expérience
+                gustative inoubliable.
+              </p>
+              <p class="price">7.000</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="article">
+            <a href="fraise.html"
+              ><img src="images/fraise.jpg" class="image"
+            /></a>
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN" onclick="changeIcon()">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <h4>Cupcake aux fraises</h4>
+              <p class="description-article">
+                nos cupcakes aux fraises, une délicieuse combinaison de saveurs
+                fruitées et de gourmandise sucrée ! Nos cupcakes sont faits avec
+                un gâteau léger et moelleux, garni d'une crème à la fraise
+                légère
+              </p>
+              <p class="price">8.500</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="article">
+            <a href="noisette.html"
+              ><img src="images/Noisette et biscuit.jpg" class="image"
+            /></a>
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN" onclick="changeIcon()">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <h4>Cupcake aux noisettes et biscuits</h4>
+              <p class="description-article">
+                nos cupcakes aux noisettes et biscuits, une délicieuse
+                combinaison de saveurs croquantes et de notes de noisette
+                grillée ! Nos cupcakes sont préparés avec un gâteau moelleux et
+                léger, garni d'une crème légère aux noisettes grillées, et
+                décorés avec des biscuits émiettés pour un effet croquant
+                irrésistible
+              </p>
+              <p class="price">9.900</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="article">
+            <a href="bleuets.html"
+              ><img src="images/miel.jpg" class="image"
+            /></a>
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN" onclick="changeIcon()">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <h4>Cupcake au miel</h4>
+              <p class="description-article">
+                nos cupcakes au miel, une douceur subtilement parfumée qui
+                ravira vos papilles ! Nos cupcakes sont préparés avec un gâteau
+                moelleux et léger, enrichi d'un miel de qualité supérieure pour
+                une saveur riche et délicate
+              </p>
+              <p class="price">11.200</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="article">
+            <a href="oreo.html"><img src="images/oreo1.jpg" class="image" /></a>
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN" onclick="changeIcon()">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <h4>Cupcake avec l'Oreo et Cacao</h4>
+              <p class="description-article">
+                Irrésistible cupcake à l'OREO et au cacao, une douceur gourmande
+                qui comblera tous les amateurs de chocolat ! Nous préparons nos
+                cupcakes avec un gâteau moelleux au cacao, et y ajoutons des
+                morceaux d'OREO croquants pour une texture et un goût
+                exceptionnels.
+              </p>
+              <p class="price">15.900 DT</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="article">
+            <a href="kiddo.html"
+              ><img src="images/kidoCupcake.jpg" class="image"
+            /></a>
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN" onclick="changeIcon()">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <h4>Kiddo Cupcake</h4>
+              <p class="description-article">
+                notre incroyable cupcake Kiddo avec un goût de chewing-gum, une
+                gourmandise ludique qui fera craquer les enfants comme les
+                adultes ! Nous préparons nos cupcakes avec un délicieux gâteau
+                moelleux et léger, auquel nous ajoutons un arôme de chewing-gum
+                pour une saveur sucrée et originale
+              </p>
+              <p class="price">16.900</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="article">
+            <a href="creme.html">
+              <img src="images/caramelCup.jpg" class="image" />
+            </a>
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN" onclick="changeIcon()">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <h4>Cupcake au caramel</h4>
+              <p class="description-article">
+                notre délicieux cupcake au caramel, un classique de la
+                pâtisserie revisité avec notre touche personnelle ! Nous
+                préparons nos cupcakes avec un gâteau moelleux et léger, que
+                nous garnissons d'une crème onctueuse et gourmande au caramel,
+                pour une expérience gustative riche et savoureuse.
+              </p>
+              <p class="price">17.800</p>
+              <br />
+            </div>
+          </div>
+        </div>
+
+        <hr />
+      </div>
+    </div>
+
+    <!-- Partie footer -->
+
+    <footer>
+      <div class="div-general-info">
+        <div class="position">
+          <i class="info-icon fas fa-map-marker-alt"></i>
+          <div class="descrip-info">
+            <h3>Nos Adresses</h3>
+            <p>Centre Urbain Nord</p>
+          </div>
+        </div>
+        <div class="contact">
+          <i class="info-icon fa-solid fa-phone"></i>
+          <div class="descrip-info">
+            <h3>Contacter nous</h3>
+            <p>+216 72313478</p>
+          </div>
+        </div>
+        <div class="email">
+          <i class="info-icon fa-solid fa-envelope"></i>
+          <div class="descrip-info">
+            <h3>Email</h3>
+            <a href="mailto:Bakery-world@gmail.com">Bakery-world@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <hr class="separateur-hr" />
+      <div class="div-info">
+        <div class="info">
+          <h4>Bakery World</h4>
+          <hr />
+          <p>
+            Backery World est une pâtisserie passionnée par l'art de la
+            pâtisserie. Nous sommes fiers de créer des produits de qualité
+            supérieure, avec les meilleurs ingrédients pour garantir une
+            expérience de dégustation inoubliable. Chez Backery World, nous
+            proposons une large sélection de pâtisseries allant des classiques
+            traditionnels aux créations les plus innovantes. Nous sommes
+            déterminés à satisfaire les papilles de nos clients en offrant un
+            large choix de produits frais et savoureux
+          </p>
+        </div>
+        <div class="info liens">
+          <h4>Liens utiles</h4>
+          <hr />
+          <ul>
+            <li>
+              <a href="mentions.html">Mentions légales </a>
+            </li>
+
+            <li><a href="">A propos de nous</a></li>
+            <li><a href="">Exprimer votre Feedback</a></li>
+          </ul>
+        </div>
+
+        <div class="reseaux-soc info">
+          <h4>Suivez nous</h4>
+          <hr />
+          <a href="#"><i class="fa-brands fa-facebook sm faceb"></i></a>
+          <a href="#"><i class="fab fa-instagram sm insta"></i></a>
+          <a href="#"><i class="fab fa-twitter sm twi"></i></a>
+          <a href="#"><i class="fab fa-pinterest sm pin"></i></a>
+        </div>
+      </div>
+
+      <div class="copyrights">
+        <p>Copyright © 2023 Backery World</p>
+      </div>
+    </footer>
+    <script src="trierArticle.js"></script>
+    <script src="heart.js"></script>
+    <script src="aperçu.js"></script>
+  </body>
+</html>

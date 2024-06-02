@@ -1,0 +1,113 @@
+h1 {
+  color: #d21312;
+}
+
+/* css appliqué sur le checkbox*/
+
+/* css appliqué sur select*/
+
+.img-chocolat {
+  object-fit: cover;
+}
+
+select {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+  width: 18%;
+  float: left;
+}
+
+.img-chocolat {
+  position: relative;
+  width: 92%;
+  height: 220px;
+  border-radius: 2%;
+}
+
+.pub {
+  position: absolute;
+  color: black;
+  bottom: 75px;
+  left: 40px;
+}
+
+.chocolat1 {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+}
+
+.centre {
+  margin-top: 1px;
+  position: relative;
+}
+
+/* taille des images */
+
+.image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%; /*la bordure d'images de chocolats*/
+}
+
+.chocolat1 {
+  padding: 20px;
+  gap: 20px;
+}
+
+.chocolat1 div {
+  text-align: center;
+}
+.tout {
+  clear: both;
+  float: left;
+  width: 35%;
+  height: 100%;
+  width: 170px;
+  position: relative;
+  z-index: 4;
+  top: 0px;
+  left: 5;
+  padding: 10px;
+  overflow-x: hidden;
+  text-align: left;
+  margin-left: 40px;
+}
+
+/* Style the side navigation */
+
+/* height: 100%;
+                  width: 200px;
+                  position: fixed;
+                  z-index: 1;
+                  top: 0;
+                  left: 0;
+                  
+                  overflow-x: hidden;
+                */
+
+/* hover des images */
+
+.chocolat:hover {
+  box-shadow: 20px 20px 20px #884444;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+/*container*/
+
+#container {
+  display: grid;
+  grid-template-columns: 26% 74%;
+}
+
+select {
+  height: 40px;
+  width: 200px;
+}

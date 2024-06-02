@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Accueil/Css/styleAccueil.css" />
+    <link rel="stylesheet" href="chocolat.css" />
+    <link rel="stylesheet" href="cart.css" />
+
+    <title>votre panier</title>
+  </head>
+  <body>
+    <header>
+      <div class="div-compte">
+        <span class="first-span">Besoin d'aide ? </span>
+        <span class="second-span"> Appeler 72313478</span>
+        <a class="inscription" href=""><span>Inscription</span></a>
+        <a class="connexion" href=""><span>Connexion</span></a>
+      </div>
+      <nav>
+        <div class="logo">
+          <p>Bakery World</p>
+        </div>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li>
+            <a href="" class="service">SERVICES</a>
+            <ul>
+              <li><a href="">Amandes</a></li>
+              <li><a href="">Macarons</a></li>
+              <li><a href="">Traditions</a></li>
+              <li><a href="">Chocolat</a></li>
+            </ul>
+          </li>
+          <li><a href="">ABOUT</a></li>
+
+          <li>
+            <a href=""><i class="fas fa-heart"></i></a>
+          </li>
+          <li class="cart">
+            <a href="cart.html"
+              ><i class="fas fa-shopping-cart"></i><span>0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="product-container"></div>
+
+    <script src="cart.js"></script>
+    <script>
+      const plusBtn = document.getElementById("plus");
+      const minusBtn = document.getElementById("minus");
+      const quantityElement = document.getElementById("quantity");
+
+      plusBtn.addEventListener("click", function () {
+        let quantity = parseInt(quantityElement.innerHTML);
+        quantity += 1;
+
+        quantityElement.innerHTML = quantity.toString();
+      });
+
+      minusBtn.addEventListener("click", function () {
+        let quantity = parseInt(quantityElement.innerHTML);
+        if (quantity > 1) {
+          quantity -= 1;
+          quantityElement.innerHTML = quantity.toString();
+        }
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/759fe707e1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="cart.js"></script>
+  </body>
+</html>

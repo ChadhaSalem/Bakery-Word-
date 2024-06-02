@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/styleAccueil.css" />
+    <link rel="stylesheet" href="Css/styleMacarons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="compte" class="div-compte">
+      <span class="first-span">Besoin d'aide ? </span>
+      <span class="second-span"> Appeler 72313478</span>
+      <a class="inscription" href="inscription.html"
+        ><span>Inscription</span></a
+      >
+      <a class="connexion" href="connexion.html"><span>Connexion</span></a>
+    </div>
+    <nav>
+      <div class="logo">
+        <p>Bakery World</p>
+      </div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li>
+          <a href="" class="service">SERVICES</a>
+          <ul>
+            <li><a href="">Amandes</a></li>
+            <li><a href="">Macarons</a></li>
+            <li><a href="">Traditions</a></li>
+            <li><a href="">Chocolat</a></li>
+          </ul>
+        </li>
+        <li><a href="propos.html">ABOUT</a></li>
+        <li>
+          <a href=""><i class="fas fa-heart"></i></a>
+        </li>
+        <li>
+          <a href="panier.html"><i class="fas fa-shopping-cart"></i> </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="container">
+      <div class="tout">
+        <div>
+          <aside class="filtre">
+            <!-- la partie droite-->
+            <h4>Filtre</h4>
+            <br />
+            <p>7 produits</p>
+
+            <hr />
+            <br />
+          </aside>
+        </div>
+        <div>
+          <aside class="dispo">
+            <h4>Disponibilité</h4>
+            <br />
+            <form class="check">
+              <input
+                type="checkbox"
+                name="produit"
+                value="En stock"
+                class="disponibilité"
+              />
+              <span>En stock </span> <br />
+              <br />
+              <input
+                type="checkbox"
+                name="produit"
+                value="En rupture de stock"
+                class="disponibilité"
+              /><span>En rupture de stock </span>
+            </form>
+            <br />
+            <hr />
+            <br />
+          </aside>
+        </div>
+      </div>
+
+      <!-- Image backround-->
+      <div class="first">
+        <div class="centre">
+          <!-- au centre et avec bordrer-->
+          <img src="images/footer.jpg" class="img-macaron" />
+
+          <div class="pub">
+            <h1>Nos macarons</h1>
+            <br />
+
+            <p>
+              "Un petit plaisir sucré à emporter partout avec vous -
+              <br />savourez nos macarons faits à la main pour une expérience
+              gustative inoubliable!"
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <!--le tri  et avec border aussi-->
+        <div class="tr">
+          <p>Triez par :</p>
+          <br />
+
+          <select id="trie-prix" name="Trie">
+            <option value="op1">Prix: faible à élevé</option>
+            <option value="op2">Prix: élevé à faible</option>
+          </select>
+          <br />
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <!--nav et modification des images-->
+
+        <div class="macaron1" id="macaron-conteneur">
+          <div class="macaron">
+            <a href="créme.html"
+              ><img src="images/macaron crème.jpg" class="image"
+            /></a>
+            <div>
+              <h4>Macaron à la crème du lait</h4>
+              <p>18.000 DT</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="macaron">
+            <a href="pistache.html"
+              ><img src="images/pistache.jpg" class="image"
+            /></a>
+            <div>
+              <h4>macaron au saveur de pistache</h4>
+              <p>20.000 DT</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="macaron">
+            <a href="jardinenchanté.html"
+              ><img src="images/macrons jardin enchanté.jpg" class="image"
+            /></a>
+            <div>
+              <h4>Macaron du jardin enchanté</h4>
+              <p>23.500 DT</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="macaron">
+            <a href="fraise.html"
+              ><img src="images/fraiseMacaronss.jpg" class="image"
+            /></a>
+            <div>
+              <h4>Macaron aux fraises</h4>
+              <p>25.000 DT</p>
+              <br />
+            </div>
+          </div>
+
+          <!--   <div class="macaron1" id="macaron-conteneur"> -->
+          <div class="macaron">
+            <a href="mogador.html"
+              ><img src="images/macaron mogador.jpg" class="image"
+            /></a>
+            <div>
+              <h4>Macaron du mogador</h4>
+              <p>28.500 DT</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="macaron">
+            <a href="chocociframboise macaron.jpg"
+              ><img src="images/chocociframboise macaron.jpg" class="image"
+            /></a>
+            <div>
+              <h4>Macaron du chocociframboise</h4>
+              <p>30.000 DT</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="macaron">
+            <a href="chocolat.html"
+              ><img src="images/chocolatMacaronns.jpg" class="image"
+            /></a>
+            <div>
+              <h4>Macaron du chocolat</h4>
+              <p>31.000 DT</p>
+              <br />
+            </div>
+          </div>
+        </div>
+        <!--   </div>  -->
+      </div>
+    </div>
+  </body>
+</html>

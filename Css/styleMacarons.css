@@ -1,0 +1,138 @@
+/* css appliqué sur select*/
+
+select {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+  width: 18%;
+  float: left;
+}
+
+.product-btn {
+  text-align: center;
+  position: relative;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+#product-BTN {
+  transition: all 0.3s ease;
+  font-size: 15px;
+  border: none;
+  width: 10px;
+  height: 10px;
+  /* color: #454545;*/
+  color: #585858;
+  background-color: transparent;
+
+  margin-right: 10px;
+}
+
+.image-container:hover .buttons {
+  bottom: 20px;
+  opacity: 1;
+}
+
+#product-BTN:hover {
+  color: #c46060;
+}
+.img-macaron {
+  position: relative;
+  width: 92%;
+  height: 220px;
+  border-radius: 2%;
+  object-fit: cover;
+}
+
+.pub h1 {
+  color: #576f72;
+}
+
+.pub {
+  position: absolute;
+  color: black;
+  bottom: 70px;
+
+  left: 40px;
+}
+
+.macaron1 {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+}
+
+.macaron2 {
+}
+
+.centre {
+  margin-top: 1px;
+  float: top;
+  position: relative;
+}
+
+/* taille des images */
+
+.image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%; /*la bordure d'images de chocolats*/
+  object-fit: cover;
+}
+
+.macaron1 {
+  padding: 20px;
+  clear: right;
+  text-align: center;
+  gap: 20px;
+}
+
+.macaron2 {
+  padding: 20px;
+  clear: right;
+  gap: 20px;
+  text-align: center;
+}
+
+.tout {
+  clear: both;
+  float: left;
+  width: 35%;
+  height: 100%;
+  width: 170px;
+  position: relative;
+  z-index: 4;
+  top: 0px;
+  left: 5;
+  padding: 10px;
+  overflow-x: hidden;
+  text-align: left;
+  margin-left: 40px;
+}
+
+/* hover des images */
+
+.macaron:hover {
+  box-shadow: 20px 20px 20px #884444;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+/*container*/
+
+#container {
+  display: grid;
+  grid-template-columns: 26% 74%;
+}
+
+select {
+  height: 40px;
+  width: 200px;
+}

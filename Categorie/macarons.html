@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Accueil/Css/styleAccueil.css" />
+    <link rel="stylesheet" href="Css/styleCategorieArticle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-6.4.0-web/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div id="compte" class="div-compte">
+      <span class="first-span">Besoin d'aide ? </span>
+      <span class="second-span"> Appeler 72313478</span>
+      <a class="inscription" href="../Inscription/inscription.html"
+        ><span>Inscription</span></a
+      >
+      <a class="connexion" href="../Connexion/connexion.html"
+        ><span>Connexion</span></a
+      >
+    </div>
+    <nav>
+      <div class="logo">
+        <p>Bakery World</p>
+      </div>
+      <ul>
+        <li><a href="../Accueil/Accueil.html">Accueil </a></li>
+        <li>
+          <a href="" class="service">Catégories</a>
+          <ul>
+            <li><a href="../Categorie/macarons.html">Macarons</a></li>
+            <li><a href="../Categorie/cupcakes.html">Cupcakes</a></li>
+            <li><a href="../Categorie/croissant.html">Croissants</a></li>
+            <li><a href="../Categorie/chocolat.html">Chocolats</a></li>
+          </ul>
+        </li>
+        <li><a href="../A propos/propos.html">A propos</a></li>
+        <li>
+          <a href="../Favoris/favoris.html"><i class="fas fa-heart"></i></a>
+        </li>
+        <li class="cart">
+          <a href="../Articles/cart.html"
+            ><i class="fas fa-shopping-cart"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- partie a gauche de filtre jusqua prix -->
+    <div id="container">
+      <div class="tout">
+        <div>
+          <aside class="filtre">
+            <!-- la partie droite-->
+            <h4>Filtre</h4>
+            <br />
+            <p>7 produits</p>
+
+            <hr />
+            <br />
+          </aside>
+        </div>
+        <div>
+          <aside class="dispo">
+            <h4>Disponibilité</h4>
+            <br />
+            <form class="check">
+              <input
+                type="checkbox"
+                name="produit"
+                value="En stock"
+                class="disponibilité"
+              />
+              <span>En stock </span> <br />
+              <br />
+              <input
+                type="checkbox"
+                name="produit"
+                value="En rupture de stock"
+                class="disponibilité"
+              /><span>En rupture de stock </span>
+            </form>
+            <br />
+            <hr />
+            <br />
+          </aside>
+        </div>
+      </div>
+
+      <!-- Image backround-->
+      <div class="first">
+        <div class="centre">
+          <!-- au centre et avec bordrer-->
+          <img src="images/bgMacarons.jpg" class="img-general" />
+
+          <div class="pub">
+            <h1>Nos macarons</h1>
+            <br />
+
+            <p>
+              "Un petit plaisir sucré à emporter partout avec vous -
+              <br />savourez nos macarons faits à la main pour une expérience
+              gustative inoubliable!"
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <!--le tri  et avec border aussi-->
+        <div class="tr">
+          <p>Triez par :</p>
+          <br />
+
+          <select name="Trie" id="trie-prix">
+            <option>Prix: faible à élevé</option>
+            <option>Prix: élevé à faible</option>
+          </select>
+          <br />
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <!--nav et modification des images-->
+        <div class="notif" id="notification"></div>
+        <div id="article-conteneur">
+          <div class="article">
+            <img src="images/macaron crème.jpg" class="image" />
+
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+
+            <div>
+              <a href="../Articles/macarons/crème.html"
+                ><h4>Macaron à la crème du lait</h4></a
+              >
+              <p class="description-article">
+                Composé de deux coques croustillantes à base d'amande et de
+                sucre, et d'un centre moelleux et crémeux à base de crème et de
+                lait, ce petit gâteau est un véritable délice en bouche.
+              </p>
+              <p class="price">14.000</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="article">
+            <img src="images/pistache.jpg" class="image" />
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <a href="../Articles/macarons/pistache.html"
+                ><h4>macaron au saveur de pistache</h4></a
+              >
+              <p class="description-article">
+                Le macaron à la pistache est une petite gourmandise qui comblera
+                les amateurs de saveurs raffinées et délicates, avec un
+                délicieux centre à la saveur intense de pistache. Les macarons à
+                la pistache sont souvent reconnaissables par leur couleur verte
+                naturelle
+              </p>
+              <p class="price">19.000</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="article">
+            <img src="images/macrons jardin enchanté.jpg" class="image" />
+
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <a href="../Articles/macarons/jardin.html"
+                ><h4>Macaron du jardin enchanté</h4></a
+              >
+              <p class="description-article">
+                Le macaron du jardin enchanté est une création unique et magique
+                de notre pâtisserie. Composé de deux coques légères et
+                croquantes à base d'amande et de sucre, avec un centre crémeux
+                et parfumé aux saveurs enchanteresses de la nature,
+              </p>
+              <p class="price">20.500</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="article">
+            <img src="images/fraiseMacaronss.jpg" class="image" />
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <a href="../Articles/macarons/fraisemac.html"
+                ><h4>Macaron aux fraises</h4></a
+              >
+              <p class="description-article">
+                Le macaron à la fraise est une petite merveille gustative qui
+                fera le bonheur des amateurs de fruits frais et de pâtisseries
+                délicates. Composé de deux coques légères et croquantes à base
+                d'amande et de sucre, avec un centre moelleux et fruité à la
+                saveur délicate de fraise
+              </p>
+              <p class="price">25.000</p>
+              <br />
+            </div>
+          </div>
+
+          <!--   <div class="macaron1" id="macaron-conteneur"> -->
+          <div class="article">
+            <img src="images/macaron mogador.jpg" class="image" />
+
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <a href="../Articles/macarons/mogador.html"
+                ><h4>Macaron du mogador</h4></a
+              >
+              <p class="description-article">
+                Le macaron au mogador est une petite pâtisserie française qui
+                réveillera vos papilles avec sa saveur acidulée et
+                rafraîchissante. Cette spécialité de la pâtisserie française est
+                idéale pour accompagner un thé ou un café.
+              </p>
+              <p class="price">38.500</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="article">
+            <img src="images/chocociframboise macaron.jpg" class="image" />
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <a href="../Articles/macarons/framboise.html"
+                ><h4>Macaron au framboise</h4></a
+              >
+              <p class="description-article">
+                Le macaron au framboise est une petite gourmandise qui séduira
+                les amateurs de saveurs douces et élégantes.Cette spécialité de
+                la pâtisserie française est un véritable délice pour les
+                papilles et les yeux
+              </p>
+              <p class="price">39.000</p>
+              <br />
+            </div>
+          </div>
+
+          <div class="article">
+            <img src="images/chocolatMacaronns.jpg" class="image" />
+            <div class="product-btn">
+              <button id="product-BTN">
+                <i class="fas fa-heart button-heart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button id="product-BTN">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div>
+              <a href="../Articles/macarons/chocolatmac.html"
+                ><h4>Macaron du chocolat</h4></a
+              >
+              <p class="description-article">
+                Le macaron au chocolat est une petite pâtisserie française qui
+                comblera les amateurs de chocolat. Composé de deux coques
+                légères et croquantes à base d'amande et de sucre, avec un
+                centre moelleux et fondant à la saveur intense de chocolat noir
+              </p>
+              <p class="price">40.000</p>
+              <br />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <!--   </div>  -->
+      </div>
+    </div>
+
+    <footer>
+      <div class="div-general-info">
+        <div class="position">
+          <i class="info-icon fas fa-map-marker-alt"></i>
+          <div class="descrip-info">
+            <h3>Nos Adresses</h3>
+            <p>Centre Urbain Nord</p>
+          </div>
+        </div>
+        <div class="contact">
+          <i class="info-icon fa-solid fa-phone"></i>
+          <div class="descrip-info">
+            <h3>Contacter nous</h3>
+            <p>+216 72313478</p>
+          </div>
+        </div>
+        <div class="email">
+          <i class="info-icon fa-solid fa-envelope"></i>
+          <div class="descrip-info">
+            <h3>Email</h3>
+            <a href="mailto:Bakery-world@gmail.com">Bakery-world@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <hr class="separateur-hr" />
+      <div class="div-info">
+        <div class="info">
+          <h4>Bakery World</h4>
+          <hr />
+          <p>
+            Backery World est une pâtisserie passionnée par l'art de la
+            pâtisserie. Nous sommes fiers de créer des produits de qualité
+            supérieure, avec les meilleurs ingrédients pour garantir une
+            expérience de dégustation inoubliable. Chez Backery World, nous
+            proposons une large sélection de pâtisseries allant des classiques
+            traditionnels aux créations les plus innovantes. Nous sommes
+            déterminés à satisfaire les papilles de nos clients en offrant un
+            large choix de produits frais et savoureux
+          </p>
+        </div>
+        <div class="info liens">
+          <h4>Liens utiles</h4>
+          <hr />
+          <ul>
+            <li>
+              <a href="../Mentions/mentions.html">Mentions légales </a>
+            </li>
+
+            <li><a href="../A propos/propos.html">A propos de nous</a></li>
+            <li>
+              <a href="../Commentaire/commentaire.html"
+                >Exprimer votre Feedback</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="reseaux-soc info">
+          <h4>Suivez nous</h4>
+          <hr />
+          <a
+            href="https://www.facebook.com/groups/292204118759292/"
+            target="_blank"
+            ><i class="fa-brands fa-facebook sm faceb"></i
+          ></a>
+          <a href="https://www.instagram.com/world.of.bakery/" target="_blank"
+            ><i class="fab fa-instagram sm insta"></i
+          ></a>
+          <a href=""><i class="fab fa-twitter sm twi"></i></a>
+          <a href=""><i class="fab fa-pinterest sm pin"></i></a>
+        </div>
+      </div>
+
+      <div class="copyrights">
+        <p>Copyright © 2023 Backery World</p>
+      </div>
+    </footer>
+    <script src="js/trierArticle.js"></script>
+    <script src="js/heart.js"></script>
+    <script src="js/aperçu.js"></script>
+  </body>
+</html>

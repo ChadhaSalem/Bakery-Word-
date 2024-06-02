@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakery shop</title>
+    <link rel="stylesheet" href="bakery.css" />
+    <link rel="stylesheet" href="Css/styleArticle.css" />
+    <link rel="stylesheet" href="Css/styleIndex.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div id="compte" class="div-compte">
+          <span class="first-span">Besoin d'aide ? </span>
+          <span class="second-span"> Appeler 72313478</span>
+          <a class="inscription" href="inscription.html"
+            ><span>Inscription</span></a
+          >
+          <a class="connexion" href="connexion.html"><span>Connexion</span></a>
+        </div>
+        <nav>
+          <div class="logo">
+            <p>Bakery World</p>
+          </div>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li>
+              <a href="" class="service">SERVICES</a>
+              <ul>
+                <li><a href="">Amandes</a></li>
+                <li><a href="">Macarons</a></li>
+                <li><a href="">Traditions</a></li>
+                <li><a href="">Chocolat</a></li>
+              </ul>
+            </li>
+            <li><a href="propos.html">ABOUT</a></li>
+            <li>
+              <a href=""><i class="fas fa-heart"></i></a>
+            </li>
+            <li>
+              <a href="panier.html"><i class="fas fa-shopping-cart"></i> </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="rows">
+        <div id="main">
+          <div id="content">
+            <figure id="magnifying_area">
+              <img id="magnifying_img" src="images/chocolImg.jpg" />
+            </figure>
+          </div>
+          <div class="content2">
+            <h1>Truffes au chocolat et à la crème de café</h1>
+            <hr />
+            <br />
+
+            <span class="bold">Disponibilté : </span>
+            <span id="stock"> en stock </span>
+            <br />
+            <br />
+            <div id="prix">12.000 DT</div>
+
+            <br />
+            <br />
+            <p id="def">
+              Une truffe à la crème au café au chocolat coupée ouverte et isolée
+              sur fond blanc
+            </p>
+            <br />
+            <br />
+            <p class="infos">
+              ingrédients : Chocolat noir Crème liquide entière Beurre doux Café
+              noir moulu de Legal le goût Liqueur de café Cacao en poudre non
+              sucré
+            </p>
+            <br />
+            <br />
+            <p class="infos">
+              Valeurs nutritives : (pour 1 truffe) Cals:64 Gras:4,25g Glu:5,68g
+              Prot:0,79g
+            </p>
+            <br />
+            <br />
+            <br />
+
+            <span class="bold"> Partager : </span>
+            <span>
+              <a href="https://www.facebook.com/"
+                ><img class="icon" src="fb.png"
+              /></a>
+              <a href="https://www.instagram.com/"
+                ><img class="icon" src="insta.png"
+              /></a>
+              <a href="https://www.pinterest.com/"
+                ><img class="icon" src="pin.png"
+              /></a>
+            </span>
+            <br />
+            <br />
+            <br />
+
+            <span class="bolder"
+              >Poids Net :
+              <select>
+                <option selected>100g</option>
+              </select></span
+            >
+            <br />
+            <br />
+            <br />
+
+            <span class="bolder"
+              >Poids Brut :
+              <select>
+                <option selected>120g</option>
+              </select></span
+            >
+            <br />
+            <br />
+            <br />
+
+            <span class="bolder"
+              >Nombre de pièces :
+              <select>
+                <option selected>12PIECES</option>
+              </select></span
+            >
+            <br />
+            <br />
+            <br />
+
+            <span class="bold">Quantité </span>
+            <span id="inline">
+              <table id="table1">
+                <tr>
+                  <td class="cellule1">+</td>
+                  <td class="size" class="cellule1">1</td>
+                  <td class="cellule1">-</td>
+                </tr>
+              </table>
+            </span>
+
+            <br />
+            <br />
+            <br />
+
+            <span>
+              <table id="table2">
+                <tr>
+                  <td class="cellule2" id="cel1">
+                    <img src="heart1.jpg" id="img" />
+                  </td>
+                  <td class="cellule2" id="cel2">
+                    <button onclick="Ajouter()">AJOUTER AU PANIER</button>
+                  </td>
+                  <td class="cellule2" id="cel3">ACHAT DIRECT</td>
+                </tr>
+              </table>
+            </span>
+          </div>
+
+          <div class="content3">
+            <div class="con3">
+              <h3>LIVRAISON</h3>
+              Livraison dans toute la Tunisie en 24/72h
+
+              <i class="fas fa-truck icon-valeur"></i>
+            </div>
+            <div class="con3">
+              <h3>PAIEMENT SÉCURISÉ</h3>
+              Par carte bancaire, ou en paiement à la livraison
+              <i class="fa-solid fa-lock icon-valeur"></i>
+            </div>
+            <div class="con3">
+              <h3>SERVICE CLIENT</h3>
+              Toujours disponible Téléphone : 58 555 999 Email :
+              info@masmoudi.tn
+              <br />
+              <i class="fa-solid fa-headphones icon-valeur"></i>
+            </div>
+          </div>
+        </div>
+        <div id="content4">
+          <h3 class="bolder">Vous pourriez également apprécier</h3>
+
+          <button class="pre-btn"><img id="btn1" src="next.jpg" /></button>
+          <button class="next-btn"><img id="btn2" src="next.jpg" /></button>
+
+          <div class="product_container">
+            <div class="product_card">
+              <div
+                class="product_image"
+                onmouseover="showButtons()"
+                onmouseout="hideButtons()"
+              >
+                <img
+                  src="images/café.png"
+                  class="product-size"
+                  class="product_thumb"
+                />
+                <div class="product-btn">
+                  <button id="product-BTN">
+                    <i class="fas fa-heart button-heart"></i>
+                  </button>
+                  <button id="product-BTN">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                  <button id="product-BTN" onclick="changeIcon()">
+                    <i class="fa fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product_info">
+                <h4 class="product_name">Truffes au citron 12 PIECES</h4>
+                <div class="price">12.000 DT</div>
+              </div>
+            </div>
+            <div class="product_card">
+              <div class="product_image">
+                <img
+                  src="fraise.png"
+                  class="product-size"
+                  class="product_thumb"
+                />
+              </div>
+              <div class="product_info">
+                <h4 class="product_name">Truffes au citron 12 PIECES</h4>
+                <div class="price">12.000 DT</div>
+              </div>
+            </div>
+            <div class="product_card">
+              <div class="product_image">
+                <img
+                  src="mocha.png"
+                  class="product-size"
+                  class="product_thumb"
+                />
+              </div>
+              <div class="product_info">
+                <h4 class="product_name">Truffes au citron 12 PIECES</h4>
+                <div class="price">12.000 DT</div>
+              </div>
+            </div>
+            <div class="product_card">
+              <div class="product_image">
+                <img
+                  src="fudge.png"
+                  class="product-size"
+                  class="product_thumb"
+                />
+              </div>
+              <div class="product_info">
+                <h4 class="product_name">Truffes au citron 12 PIECES</h4>
+                <div class="price">12.000 DT</div>
+              </div>
+            </div>
+            <div class="product_card">
+              <div class="product_image">
+                <img
+                  src="coco.png"
+                  class="product-size"
+                  class="product_thumb"
+                />
+              </div>
+              <div class="product_info">
+                <h4 class="product_name">Truffes au citron 12 PIECES</h4>
+                <div class="price">12.000 DT</div>
+              </div>
+            </div>
+            <div class="product_card">
+              <div class="product_image">
+                <img
+                  src="salé.png"
+                  class="product-size"
+                  class="product_thumb"
+                  id="salé"
+                />
+              </div>
+              <div class="product_info">
+                <h4 class="product_name">Truffes au citron 12 PIECES</h4>
+                <div class="price">12.000 DT</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="div-general-info">
+        <div class="position">
+          <i class="info-icon fas fa-map-marker-alt"></i>
+          <div class="descrip-info">
+            <h3>Nos Adresses</h3>
+            <p>Centre Urbain Nord</p>
+          </div>
+        </div>
+        <div class="contact">
+          <i class="info-icon fa-solid fa-phone"></i>
+          <div class="descrip-info">
+            <h3>Contacter nous</h3>
+            <p>+216 72313478</p>
+          </div>
+        </div>
+        <div class="email">
+          <i class="info-icon fa-solid fa-envelope"></i>
+          <div class="descrip-info">
+            <h3>Email</h3>
+            <a href="mailto:Bakery-world@gmail.com">Bakery-world@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <hr class="separateur-hr" />
+      <div class="div-info">
+        <div class="info">
+          <h4>Bakery World</h4>
+          <hr />
+          <p>
+            Backery World est une pâtisserie passionnée par l'art de la
+            pâtisserie. Nous sommes fiers de créer des produits de qualité
+            supérieure, avec les meilleurs ingrédients pour garantir une
+            expérience de dégustation inoubliable. Chez Backery World, nous
+            proposons une large sélection de pâtisseries allant des classiques
+            traditionnels aux créations les plus innovantes. Nous sommes
+            déterminés à satisfaire les papilles de nos clients en offrant un
+            large choix de produits frais et savoureux
+          </p>
+        </div>
+        <div class="info liens">
+          <h4>Liens utiles</h4>
+          <hr />
+          <ul>
+            <li>
+              <a href="">Mentions légales </a>
+            </li>
+
+            <li><a href="">A propos de nous</a></li>
+            <li><a href="">Exprimer votre Feedback</a></li>
+          </ul>
+        </div>
+
+        <div class="reseaux-soc info">
+          <h4>Suivez nous</h4>
+          <hr />
+          <a href="#"><i class="fa-brands fa-facebook sm faceb"></i></a>
+          <a href="#"><i class="fab fa-instagram sm insta"></i></a>
+          <a href="#"><i class="fab fa-twitter sm twi"></i></a>
+          <a href="#"><i class="fab fa-pinterest sm pin"></i></a>
+        </div>
+      </div>
+
+      <div class="copyrights">
+        <p>Copyright © 2023 Backery World</p>
+      </div>
+    </footer>
+    <script src="article.js"></script>
+    <script src="paanier.js"></script>
+  </body>
+</html>
